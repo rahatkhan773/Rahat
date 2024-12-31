@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content=""IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio Website Design</title>
+
+    <!--box icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--icons-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!--custom css-->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--header design-->
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+      <nav class="navbar">
+        <a href="#home" style="--i: 0" class="active1">Home</a>
+        <a href="#about" style="--i: 1" class="active2">About</a>
+        <a href="#qualification" style="--i: 2" class="active3"
+          >Qualification</a
+        >
+        <a href="#skills" style="--i: 3" class="active4">Skills</a>
+        <a href="#services" style="--i: 4" class="active5">Services</a>
+        <a href="#portfolio" style="--i: 5" class="active6">Portfolio</a>
+        <a href="#contact" style="--i: 6" class="active7">Contact</a>
+        <hr />
+      </nav>
+    </header>
+
+    <!--home section design-->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>MD Rahat</h1>
+        <h3>And I'm a <span> Student</span></h3>
+        <p>
+          I am Currently pursuing my Higher School Certificate (HSC). Hobbies are listening to Music,
+          watching Movies and Anime.
+        </p>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/rahat-khan-701812300/"
+            ><i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/MDRahat2007"
+            ><i class="bx bxl-Facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/rahat.0802/">
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="IMG_20200702_095332 (2).JPG" alt="" />
+      </div>
+    </section>
+
+    <!--about section -->
+    <section class="about" id="about">
+      <div class="abount-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Student</h3>
+        <div class="about-img">
+          <img src="IMG_20200702_095332 (2).JPG" alt="" />
+        </div>
+      </div>
+      <div class="about-pb">
+        <p>
+          My name is MD Rahat. I have completed my Secondary School Certificate (SSC) in Kushtia Zilla School in Science, Bangladesh.
+           In addition to that right now i am doing my Higher School Certificate (HSC) from Kushtia Islamia College in Science, Bangladesh. 
+           I am passionate about T-Shirt Design, Bussiness card Design, Advertisement Design.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!--Qualification-->
+    <section class="qualification section" id="qualification">
+      <h2 class="section_title">Qualification</h2>
+      <span class="section_subtitle">My Personal Journey</span>
+
+      <div class="qualification_container container">
+        <div class="qualification_tabs">
+          <div
+            class="qualification_button button--flex qualification_active"
+            data-target="#education"
+          >
+            <i class="uil uil-graduation-cap qualification_icon"></i>
+            Education
+          </div>
+
+          <div class="qualification_button button--flex" data-target="#work">
+            <i class="uil uil-briefcase-alt qualification_icon"></i>
+            Work
+          </div>
+        </div>
+
+        <div class="qualification_sections">
+          <div
+            class="qualification_content qualification_active"
+            data-content
+            id="education"
+          >
+            <div class="qualification_data">
+              <div>
+                <h3 class="qualification_title">
+                  Secondary School certidicate (SSC) - Science
+                </h3>
+                <span class="qualification_subtitle">Kushtia Zilla School, Bangladesh</span>
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2015 - 2023
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+            </div>
+
+            <div class="qualification_data">
+              <div class="q_space"></div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification_title">
+                  I am doing my Higher School Certificate (HSC) - Science 
+                </h3>
+                <span class="qualification_subtitle">Kushtia Islamia College, Bangladesh</span>
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2023 - 2025
+                </div>
+              </div>
+            </div>
+
+             <div>
+                <span class="qualification_rounder"></span>
+                <!--<span class="qualification_line"></span>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="qualification_content" data-content id="work">
+            <div class="qualification_data">
+              <div></div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <!--<span class="qualification_line"></span>-->
+              </div>
+
+              <div>
+                <h3 class="qualification_title">Graphic Designer</h3>
+                <span class="qualification_subtitle"
+                  >Somaj Seba Odhidoptor, Bangladesh</span
+                >
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2022 - 2024
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SKILLS SECTION-->
+    <section class="skills section" id="skills">
+      <h2 class="section_title">Skills</h2>
+      <span class="section_subtitle">My Technical level</span>
+      <div class="skills_container container grid">
+        <div>
+          <!--skills 1-->
+          <div class="skills_content skills_open">
+            <div class="skills_header">
+              <div>
+                <h1 class="skills_title">T - Shirt Design</h1>
+              </div>
+              <i class="uil uil-angle-down skills_arrow"></i>
+            </div>
+            <div class="skills_list grid">
+              <div class="skills_data">
+                <div class="skills_titles">
+                  <h3 class="skills_name">Bulk T-Shirt Design</h3>
+                  <h1 style="font-size: 15px;">70%</h1>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_Bulk T-Shirt Design"></span>
+                </div>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_titles">
+                  <h3 class="skills_name">Anime T - Shirt Design</h3>
+                  <h1 style="font-size: 15px;">100%</h1>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_Anime T - Shirt Design"></span>
+                </div>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_titles">
+                  <h3 class="skills_name">Vintage T - Shirt Design</h3>
+                  <h1 style="font-size: 15px;">100%</h1>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_Vintage T - Shirt Design"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--skills 2-->
+          <div class="skills_content skills_close">
+            <div class="skills_header">
+              <div>
+                <h1 class="skills_title">Bussiness card Design</h1>
+              </div>
+              <i class="uil uil-angle-down skills_arrow"></i>
+            </div>
+            <div class="skills_list grid">
+              <div class="skills_data">
+                <div class="skills_titles">
+                <h1 style="font-size: 15px;">100%</h1>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_Bussiness card Design"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!--skills 3-->
+          <div class="skills_content skills_close">
+            <div class="skills_header">
+              <div>
+                <h1 class="skills_title">Advertisement Design</h1>
+              </div>
+              <i class="uil uil-angle-down skills_arrow"></i>
+            </div>
+            <div class="skills_list grid">
+              <div class="skills_data">
+                <div class="skills_titles">
+                  <h1 style="font-size: 15px;">100%</h1>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_Socail Media Advertisement Design"></span>
+                </div>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--services section -->
+    <section class="services" id="services">
+      <h2 class="section_title">Services</h2>
+      <div class="services-container">
+        <div class="services-box">
+          <h3>T-Shirt Design</h3>
+          <p>
+            Custom, print-ready designs for events, branding, and personal use. Unique, high-quality, and fast delivery.
+          </p>
+        </div>
+
+        <div class="services-box">
+          <h3>Bussiness card Design</h3>
+          <p>
+            Professional, custom-designed business cards that reflect your brand. High-quality, print-ready designs delivered quickly.
+          </p>
+        </div>
+        <div class="services-box">
+          <h3>Advertisement Design</h3>
+          <p>
+            Eye-catching, custom banners tailored for all platforms to boost engagement and brand identity. High-quality, creative, and ready-to-use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--PORTFOLIO-->
+    <section class="portfolio" id="portfolio">
+      <h2 class="section_title">Portfolio</h2>
+      <span class="section_subtitle">Most Recent Work</span>
+
+      <div class="portfolio_container">
+        <div class="portfolio_all">
+          <div class="portfolio_content">
+            <img src="T-Shirt - 16.JPEG" alt="T - Shirt Designs" class="portfolio_img" />
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">T - Shirt Designs</h3>
+              <p class="portfolio_description">
+                A bold and stylish T-shirt design featuring a minimalist graphic of a mountain peak at sunrise, 
+                paired with the phrase 'Adventure Awaits' in modern typography. 
+                Vibrant colors and clean lines make it perfect for outdoor enthusiasts and casual wear.
+              </p>
+              <a
+                href="file:///F:/Rahat/Protfolio/index%201.html"
+                class="button button-flex button-small portfolio_button"
+              >
+                Demo
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio_content">
+            <img
+              src="5.JPEG"
+              alt="Advertisement Designs"
+              class="portfolio_img"
+            />
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">Advertisement Designs</h3>
+              <p class="portfolio_description">
+                Advertisement Designs involve the creative and strategic development of visual content to promote a product, service, or brand. 
+                These designs combine compelling graphics, typography, and messaging to capture attention, communicate value, and drive engagement across various media platforms, including print, digital, and social channels.
+              </p>
+              <a
+                href="file:///F:/Rahat/Protfolio/index%202.html"
+                class="button button-flex button-small portfolio_button"
+              >
+                Demo
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio_content">
+            <img src="B.C - 8.jpg" alt="QR  Website" class="portfolio_img" />
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">Bussiness card Design</h3>
+              <p class="portfolio_description">
+                A business card design is a compact and professional layout showcasing key contact information, 
+                including the company name, logo, individual name, role, phone number, email, and website. 
+                It integrates branding elements like colors, fonts, and design styles to create a visually 
+                appealing and memorable representation of the business.
+              </p>
+              <a
+                href="file:///F:/Rahat/Protfolio/index%203.html"
+                class="button button-flex button-small portfolio_button"
+              >
+                Demo
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact section-->
+    <section class="contact section" id="contact">
+      <h2 class="section_title">Contact Me</h2>
+      <span class="section_subtitle">Get in touch</span>
+
+      <div class="contact_container container grid">
+        <div>
+          <div class="contact_information">
+            <i class="uil uil-envelope contact_icon"></i>
+
+            <div>
+              <h3 class="contact_title">Email Me</h3>
+              <span class="contact_subtitle"><b>rahatgaming6@gmail.com</b></span>
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="contact_form grid">
+          <div class="contact_inputs grid">
+            <div class="contact_content">
+              <label for="" class="contact_label">Name</label>
+              <input type="text" class="contact_input" />
+            </div>
+
+            <div class="contact_content">
+              <label for="" class="contact_label">Email</label>
+              <input type="email" class="contact_input" />
+            </div>
+          </div>
+          <div class="contact_content">
+            <label for="" class="contact_label">Project</label>
+            <input type="text" class="contact_input" />
+          </div>
+          <div class="contact_content">
+            <label for="" class="contact_label">Message</label>
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="7"
+              class="contact_input"
+            ></textarea>
+          </div>
+
+          <div>
+            <a href="" class="btn" id="buttun_td">
+              Send Message
+              <i class="uil uil-message button_icon"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--footer section-->
+    <footer class="footer">
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/rahat-khan-701812300/"
+          ><i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/MDRahat2007"><i class="bx bxl-Facebook"></i> </a>
+        <a href="https://www.instagram.com/rahat.0802/">
+          <i class="bx bxl-instagram"></i>
+        </a>
+      </div>
+      <h6 class="footer_bar">@Rahat all rights reserved</h6>
+    </footer>
+
+    <!--custom js-->
+    <script src="script.js"></script>
+  </body>
+</html>
