@@ -252,10 +252,12 @@ async def get_cart(current_user: User = Depends(get_current_user)):
     for item in cart_items:
         product = await db.products.find_one({"id": item["product_id"]})
         if product:
+            # Convert product to Product model to handle serialization
+            product_obj = Product(**product)
             result.append({
                 "id": item["id"],
                 "quantity": item["quantity"],
-                "product": product
+                "product": product_obj.dict()
             })
     
     return result
