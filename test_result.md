@@ -237,11 +237,9 @@ metadata:
 
 test_plan:
   current_focus:
-    - "User Registration and Authentication"
-    - "Product Management API"
-    - "Shopping Cart API"
-    - "Order Management API"
-    - "Sample Products Initialization"
+    - "User Authentication UI"
+    - "Product Catalog Display"
+    - "Shopping Cart UI"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
